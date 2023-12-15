@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+    var myName = prompt("Please enter your name", "budi");
+    var nb = prompt("Please enter the item name", "");
+    var hs = prompt("Please enter the unit price", "");
+    var jb = prompt("Please enter the quantity", "");
+
+    var hb = hs * jb;
+    var disc = 0;
+
+    if (hb > 500000) {
+        disc = 5 / 100 * hb;
+    } else if (hb > 300000) {
+        disc = 2 / 100 * hb;
+    } else {
+        disc = 0.5 / 100 * hb;
+    }
+
+    var hbb = hb - disc;
+
+    document.write('<font size="3" color="blue"><img src="img_mo-keranjang.jpg" width="75" height="60"> Penjualan Harga Barang</font>');
+    document.write('<font size="3" color="sienna"><pre>==================================<br>');
+    document.write("Nama Barang: " + nb + "<br>");
+    document.write("Harga Satuan: " + hs + "<br>");
+    document.write("Jumlah Barang: " + jb + "<br>");
+    document.write("Harga Total: " + hb + "<br>");
+    document.write("Diskon: " + disc + "<br>");
+    document.write("Harga Barang Bersih: " + hbb + "<br>");
+    document.write("==================================</pre></font>");
+
+    document.write('<font size="3" color="red"><blink>');
+    document.write("Created by " + myName);
+    document.write("</font></blink>");
+</script>
+
+</body>
+</html>
