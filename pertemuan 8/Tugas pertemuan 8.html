@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Pertemuan 8</title>
+    <style>
+        h1 {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Free Registration</h1>
+        <hr>
+        <pre>
+        NAMA			:	<input type="text" size="25" name="nama">
+
+        Tgl Lahir		:	<input type="date" name="tanggal_lahir" required><br><br>
+
+        Alamat			:	<textarea name="alamat" rows="3" cols="30"></textarea>
+
+        Kota			:	<input type="text" size="25" name="kota">
+
+        Pekerjaan		:	<select name="pekerjaan">
+							<option value="Tani">Tani</option>
+							<option value="Guru">Guru</option>
+							<option value="Pengusaha">Pengusaha</option>
+							<option value="Pegawai Swasta">Pegawai Swasta</option>
+							<option value="Pegawai Negri">Pegawai Negri</option>
+							</select>
+
+        JENIS KELAMIN	:	<input type="radio" name="jkel" value="Pria"> Pria <input type="radio" name="jkel" value="Wanita"> Wanita
+
+        HOBBY			:	<input type="checkbox" name="hobi" value="Reading"> Reading
+						<input type="checkbox" name="hobi" value="Sport"> Sport
+						<input type="checkbox" name="hobi" value="Singing"> Singing
+						<input type="checkbox" name="hobi" value="Traveling"> Traveling
+        </pre>
+        <br>
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
